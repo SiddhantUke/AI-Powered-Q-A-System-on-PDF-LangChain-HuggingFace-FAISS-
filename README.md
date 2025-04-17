@@ -14,6 +14,9 @@ numpy: A library for numerical computing and array manipulation.
 !pip install langchain: Installs the LangChain library, which helps in building applications using LLMs (Large Language Models).
 
 
+
+
+
  Step 2: Installing Sentence Transformers
 
 ➤ Explanation:
@@ -23,9 +26,14 @@ Sentence Transformers are used to convert text into embeddings—a numerical for
 
 
 
+
+
  Step 3: Install and Import LangChain Modules
 
 Purpose: This installs the langchain-community package, which includes various connectors for document loading, vector stores, LLMs, and more—specifically for open-source or community-supported tools.
+
+
+
 
 
 
@@ -49,11 +57,17 @@ PromptTemplate: Customizes the prompt format used for LLM inference.
 
 
 
+
+
+
 Step 5: Install PDF Reader
 
  Explanation:
 
 Installs pypdf, a lightweight library to read PDF files, often used internally by loaders like PyPDFLoader.
+
+
+
 
 
 
@@ -68,9 +82,16 @@ The loader will extract text from the PDF for further processing (like chunking 
 
 
 
+
+
 Load the PDF Document
 
 Reads and extracts raw text from the PDF using LangChain’s community loader.
+
+
+
+
+
 
 
 Step 7: Split the Text into Chunks
@@ -83,10 +104,20 @@ So, the PDF is divided into small, overlapping sections for better understanding
 
 
 
+
+
+
+
 Step 8: Convert Text to Embeddings
 
 embedding = HuggingFaceBgeEmbeddings(model_name="BAAI/bge-small-en-v1.5")
  Text embeddings are like numerical fingerprints of text.They allow us to search semantically (based on meaning, not exact words).
+
+
+
+
+
+
 
 
 Step 9: Store in FAISS Vector Database
@@ -96,9 +127,26 @@ FAISS is a fast similarity search engine by Facebook. It stores all chunk embedd
 
 
 
+
+
+
+
+
+
+
 Step 10 : Define a Prompt Template
 
 You can customize how the system asks the LLM questions. The system injects context (from the PDF) + your actual question.
+
+
+
+
+
+
+
+
+
+
 
 
 Step 11 : Set Up Retrieval + QA Chain
@@ -106,6 +154,12 @@ Step 11 : Set Up Retrieval + QA Chain
 Retriever → finds relevant document chunks
 
 LLM → answers your question using those chunks
+
+
+
+
+
+
 
 
 Step 12 : Ask Questions & Get Answers
@@ -116,7 +170,7 @@ You get a smart, context-aware answer from the AI, grounded in the document cont
 
 
 
- Technologies Used
+Technologies Used
 
 Tech	Purpose
 
