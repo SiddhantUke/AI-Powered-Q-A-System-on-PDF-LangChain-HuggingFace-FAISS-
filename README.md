@@ -204,7 +204,7 @@ Technologies Used
 ## Tech	Purpose
 
 
-LangChain ---------------> Orchestration of LLM pipelines
+.LangChain ---------------> Orchestration of LLM pipelines
 .
 
 .
