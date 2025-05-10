@@ -14,13 +14,15 @@ numpy: A library for numerical computing and array manipulation.
 !pip install langchain: Installs the LangChain library, which helps in building applications using LLMs (Large Language Models).
 
 .
+
 .
+
 .
+
 .
+
 .
-.
-.
-.
+
 
 Step 2: Installing Sentence Transformers
 
